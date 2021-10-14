@@ -5,14 +5,30 @@
 
 /* desktop view */
 @media only screen and (min-width: 700px){
+    /* top section */
+   #top h1{
+        font-weight: lighter;
+        font-size: 70px;
+        text-align: center;
+    }
+    #top{
+        margin-bottom: 1000px; /*this will need to be changed once we get some text in here*/
+    }
+
 
 }
 /* outside media queries */
 body {
-
+    background-color: #00001A;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
 }
 /* navbar and graphics */
-#top {
+#top{
+   
 }
 /* about section */
 #about {
@@ -23,7 +39,8 @@ body {
     height: 300px;
 }
 #experience{
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 /* contact section */
 #contact {
