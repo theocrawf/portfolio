@@ -1,46 +1,66 @@
-/* mobile view */
-@media only screen and (max-width: 700px){
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* mobile view */
+@media only screen and (max-width: 700px) {
 }
 
 /* desktop view */
-@media only screen and (min-width: 700px){
-    /* top section */
-   #top h1{
-        font-weight: lighter;
-        font-size: 70px;
-        text-align: center;
-    }
-    #top{
-        margin-bottom: 1000px; /*this will need to be changed once we get some text in here*/
-    }
+@media only screen and (min-width: 700px) {
+  /* top section */
+  #nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #00001a;
+  }
+  #nav a {
+    font-size: 24px;
+    margin-left: 5%;
+  }
+  #top h1 {
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 5%;
+  }
+  #top {
+    margin-bottom: 1000px; /*this will need to be changed once we get some text in here*/
+  }
 
-
+  /* about section */
+  #about {
+    margin-bottom: 1000px; /*this will be changed once we get some text in here*/
+  }
 }
 /* outside media queries */
 body {
-    background-color: #00001A;
-    color: aliceblue;
+  background-color: #00001a;
+  color: aliceblue;
 }
-a{
-    text-decoration: none;
-    color: aliceblue;
+a {
+  text-decoration: none;
+  color: aliceblue;
 }
 /* navbar and graphics */
-#top{
-   
+#top {
 }
 /* about section */
 #about {
 }
 /* experience section */
-#experience img{
-    width: 550px;
-    height: 300px;
+#experience img {
+  width: 550px;
+  height: 300px;
 }
-#experience{
-    display: flex;
-    justify-content: space-between;
+#experience {
+  display: flex;
+  justify-content: space-between;
 }
 /* contact section */
 #contact {
