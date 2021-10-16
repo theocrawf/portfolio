@@ -37,6 +37,15 @@
   #about {
     margin-bottom: 1000px; /*this will be changed once we get some text in here*/
   }
+  /* skills section */
+  #skills {
+    margin-bottom: 900px;
+  }
+
+  /* testimonial section */
+  #reviews {
+    display: flex;
+  }
 }
 /* outside media queries */
 body {
