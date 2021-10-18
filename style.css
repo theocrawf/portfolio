@@ -37,6 +37,15 @@
   #about {
     margin-bottom: 1000px; /*this will be changed once we get some text in here*/
   }
+
+  /* experience section */
+  #experience {
+    margin-bottom: 200px;
+    margin-top: 200px;
+  }
+  #gallery {
+    display: flex;
+  }
   /* skills section */
   #skills {
     margin-bottom: 500px;
@@ -46,7 +55,6 @@
     margin-top: 2%;
     margin-right: 5%;
     text-align: right;
-    right: 50px;
     justify-content: flex-end;
   }
   .topic {
@@ -145,10 +153,7 @@ a {
   width: 550px;
   height: 300px;
 }
-#experience {
-  display: flex;
-  justify-content: space-between;
-}
+
 /* contact section */
 #contact {
 }
