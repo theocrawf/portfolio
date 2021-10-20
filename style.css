@@ -132,8 +132,23 @@
   #reviews {
     display: flex;
   }
+  /* contact section */
+  #contact {
+    margin-bottom: 300px;
+  }
+  #contact-links {
+    display: flex;
+    margin-top: 50px;
+  }
+  i {
+    margin: 0 20px;
+  }
+  .fab {
+    /*find a prettier color*/
+    color: red;
+  }
 }
-/* outside media queries */
+/*------------------------ outside media queries------------------------- */
 body {
   background-color: #00001a;
   color: aliceblue;
