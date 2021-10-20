@@ -36,15 +36,22 @@
   /* about section */
   #about {
     margin-bottom: 1000px; /*this will be changed once we get some text in here*/
+    padding-top: 100px;
   }
 
   /* experience section */
   #experience {
     margin-bottom: 200px;
     margin-top: 200px;
+    padding-top: 100px;
   }
   #gallery {
     display: flex;
+    text-align: center;
+  }
+  .gallery-images {
+    width: 10px;
+    height: auto;
   }
   /* skills section */
   #skills {
@@ -60,7 +67,6 @@
   .topic {
     text-align: center;
     width: 10%;
-
     background-color: #036ffc;
   }
   .progress {
