@@ -49,8 +49,8 @@
     display: flex;
     text-align: center;
   }
-  .gallery-images {
-    width: 10px;
+  #experience img {
+    width: 350px;
     height: auto;
   }
   /* skills section */
@@ -149,10 +149,6 @@
   i {
     margin: 0 20px;
   }
-  .fab {
-    /*find a prettier color*/
-    color: red;
-  }
 }
 /*------------------------ outside media queries------------------------- */
 body {
@@ -170,11 +166,11 @@ a {
 #about {
 }
 /* experience section */
-#experience img {
-  width: 550px;
-  height: 300px;
-}
 
 /* contact section */
 #contact {
+}
+.fab {
+  /*find a prettier color*/
+  color: blueviolet;
 }
