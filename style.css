@@ -187,6 +187,10 @@
       #1163cf 40px
     );
   }
+  #projects {
+    margin-bottom: 200px;
+  }
+
   /* testimonial section */
   #reviews {
     display: flex;
