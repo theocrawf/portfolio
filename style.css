@@ -108,14 +108,14 @@
   }
   /* skills section */
   #skills {
-    margin-bottom: 500px;
+    margin: auto auto auto 35%;
   }
   .skill-progress {
     display: flex;
     margin-top: 2%;
     margin-right: 5%;
     text-align: right;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
   }
   .topic {
     text-align: center;
