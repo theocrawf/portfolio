@@ -7,7 +7,6 @@
 
 /* mobile view */
 @media only screen and (max-width: 700px) {
-
   #experience img {
     width: 250px;
     height: auto;
@@ -233,6 +232,10 @@ a {
 #contact {
 }
 .fab {
+  /*find a prettier color*/
+  color: blueviolet;
+}
+.far {
   /*find a prettier color*/
   color: blueviolet;
 }
