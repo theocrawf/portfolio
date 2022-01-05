@@ -21,7 +21,7 @@
     top: 0;
     width: 100%;
     padding: 2% 0;
-    background-color: #00001a;
+    background-color: #1d3f61;
     display: flex;
   }
   #nav a {
@@ -44,14 +44,14 @@
   
   /* about section */
   #about {
-    margin-bottom: 1000px; /*this will be changed once we get some text in here*/
+    /* margin-bottom: 1000px; this will be changed once we get some text in here */
     padding-top: 100px;
   }
 
   /* experience section */
   #experience {
-    margin-bottom: 200px;
-    margin-top: 200px;
+    /* margin-bottom: 200px; */
+    /* margin-top: 200px; */
     padding-top: 100px;
   }
   #gallery {
@@ -76,14 +76,14 @@
   .topic {
     text-align: center;
     width: 10%;
-    background-color: #036ffc;
+    background-color: transparent;
   }
   .progress {
     /* margin: 50px auto; */
     /* padding: 2px; */
     width: 100%;
     max-width: 500px;
-    border: 1px solid #05e35e;
+    border: 1px solid #ffdd96;
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -99,13 +99,7 @@
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    background: repeating-linear-gradient(
-      135deg,
-      #036ffc,
-      #036ffc 20px,
-      #1163cf 20px,
-      #1163cf 40px
-    );
+    background: #530044;
   }
 
   .progress .progress__bar60 {
@@ -117,13 +111,7 @@
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    background: repeating-linear-gradient(
-      135deg,
-      #036ffc,
-      #036ffc 20px,
-      #1163cf 20px,
-      #1163cf 40px
-    );
+    background: #530044;
   }
 
   .progress .progress__bar20 {
@@ -135,16 +123,7 @@
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    background: repeating-linear-gradient(
-      135deg,
-      #036ffc,
-      #036ffc 20px,
-      #1163cf 20px,
-      #1163cf 40px
-    );
-  }
-  #projects {
-    margin-bottom: 200px;
+    background: #530044;
   }
 
   /* testimonial section */
@@ -165,12 +144,12 @@
 }
 /*------------------------ outside media queries------------------------- */
 body {
-  background-color: #00001a;
-  color: aliceblue;
+  background-color: #002337;
+  color: #ffdd96;
 }
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: #ffdd96;
 }
 /* navbar and graphics */
 #top {
@@ -185,9 +164,9 @@ a {
 }
 .fab {
   /*find a prettier color*/
-  color: blueviolet;
+  color: #ffdd96;
 }
 .far {
   /*find a prettier color*/
-  color: blueviolet;
+  color: #ffdd96;
 }
