@@ -41,7 +41,7 @@
     text-align: center;
     margin-top: 5%;
   }
-  
+
   /* about section */
   #about {
     /* margin-bottom: 1000px; this will be changed once we get some text in here */
@@ -57,7 +57,14 @@
   #gallery {
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
+
+  .photo-gallery {
+    margin-top: 10%;
+  }
+
   #experience img {
     width: 350px;
     height: auto;
