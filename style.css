@@ -60,9 +60,9 @@
     justify-content: space-evenly;
   }
   /* this is for the info that will populate as you hover over the card */
-  .hidden {
+  /* .hidden {
     display: none;
-  }
+  } */
 
   .card {
     /* Add shadows to create the "card" effect */
@@ -72,24 +72,53 @@
     border: 1px solid #ffdd96;
     margin-top: 5%;
     background-color: #1d3f61;
+    position: relative;
   }
 
   /* On mouse-over, add a deeper shadow */
-  .card:hover {
+  .card:hover .hidden {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+    height: 50%;
   }
 
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
   }
+  .hidden{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: #1d3f61;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .text{
+    color: #ffdd96;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    text-align: center;
+  }
+  .in-progress{
+    top: 70%;
+    left: 25%;
+  }
+  .text3{
+    font-size: 18px;
+  }
   .site-name {
     font-size: 18px;
   }
 
   #experience img {
-    width: 350px;
-    height: 180px;
+    width: 550px;
+    height: 300px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
