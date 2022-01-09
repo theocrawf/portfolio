@@ -17,20 +17,25 @@
 @media only screen and (min-width: 700px) {
   /*navbar section */
   #nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     padding: 2% 0;
-    background-color: #1d3f61;
+    background-color: #101820FF;
     display: flex;
+    z-index: 1;
   }
   #nav a {
     font-size: 24px;
     margin-left: 5%;
   }
-  .right {
+  #right-nav{
+    display: flex;
+    margin: auto 5% auto auto;
   }
-
+  .right{
+    margin-right: 50px;
+  }
   /* name section */
   #top h1 {
     font-weight: lighter;
@@ -40,7 +45,7 @@
   }
   .title-sections {
     font-weight: lighter;
-    margin: 5% auto 2% 5%;
+    margin: 5% 5% 2% 5%;
     padding-top: 10%;
   }
 
@@ -51,18 +56,17 @@
 
   /* experience section */
   #experience {
-    margin: 10% 0%;
+    margin: 5%;
+    padding-top: 7%;
   }
+
   #gallery {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    /* margin: auto auto auto 5%; */
   }
-  /* this is for the info that will populate as you hover over the card */
-  /* .hidden {
-    display: none;
-  } */
 
   .card {
     /* Add shadows to create the "card" effect */
@@ -71,13 +75,14 @@
     border-radius: 5px;
     border: 1px solid #ffdd96;
     margin-top: 5%;
-    background-color: #1d3f61;
+    background-color: #101820FF;
     position: relative;
   }
 
-  /* On mouse-over, add a deeper shadow */
-  .card:hover .hidden {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
+  .card:hover .hidden2 {
+    height: 50%;
+  }
+  .card:hover .hidden{
     height: 50%;
   }
 
@@ -85,35 +90,45 @@
   .container {
     padding: 2px 16px;
   }
+  .hidden2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #101820FF;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+  }
   .hidden{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    border-radius: 5px;
-    background-color: #1d3f61;
+    border-radius: 0 0 5px 5px;
+    background-color: #101820FF;
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .5s ease;
+    transition: .3s ease;
   }
   .text{
     color: #ffdd96;
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 25%;
     text-align: center;
   }
   .in-progress{
     top: 70%;
     left: 25%;
+    font-size: 18px;
   }
   .text3{
     font-size: 18px;
   }
   .site-name {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   #experience img {
@@ -124,23 +139,26 @@
   }
   /* --------------------skills section */
   #skills {
-    margin: 10% auto auto auto;
+    margin: 5% auto auto auto;
   }
   .skill-progress {
     display: flex;
-    margin-top: 2%;
-    margin-right: 5%;
+    margin: 2% 5%;
     text-align: right;
+    font-size: 22px;
     /* justify-content: flex-end; */
   }
   .topic {
-    text-align: center;
+    text-align: left;
+    /* margin-top: 15%; */
     width: 10%;
+    font-size: 24px;
     background-color: transparent;
   }
   .progress {
     /* margin: 50px auto; */
     /* padding: 2px; */
+    display: flex;
     width: 100%;
     max-width: 500px;
     border: 1px solid #ffdd96;
@@ -162,12 +180,12 @@
     background: #530044;
   }
 
-  .progress .progress__bar60 {
+  .progress .progress__bar65 {
     /* height: 100%;
     width: 90%;
     background-color: #05e35e; */
     height: 100%;
-    width: 60%;
+    width: 65%;
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -185,26 +203,33 @@
     border-top-left-radius: 0;
     background: #530044;
   }
+  .percentage{
+    margin-left: 20px;
+  }
 
   /* contact section */
   #contact {
   }
   #contact-links {
     display: flex;
-    margin: 5% auto 5% 5%;
+    margin: 2% auto 5% 5%;
   }
-  i {
-    margin: 0 20px 0 0;
+  .contact-link {
+    margin: 0 40px 0 0;
   }
 }
 /*------------------------ outside media queries------------------------- */
 body {
-  background-color: #002337;
+  background-color: #030303;
   color: #ffdd96;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
   color: #ffdd96;
+}
+h1{
+  font-weight: lighter;
 }
 /* navbar and graphics */
 #top {
