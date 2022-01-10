@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-/* mobile view */
+/*------------------------------------------- mobile view ----------------------------------------------------*/
 @media only screen and (max-width: 700px) {
   #experience img {
     width: 250px;
@@ -13,15 +13,19 @@
   }
 }
 
-/* desktop view */
+/* ------------------------------------------- tablet view --------------------------------------------------- */
 @media only screen and (min-width: 700px) {
+}
+
+/*----------------------------------------- desktop view -----------------------------------------------------*/
+@media only screen and (min-width: 900px) {
   /*navbar section */
   #nav {
     position: sticky;
     top: 0;
     width: 100%;
     padding: 2% 0;
-    background-color: #101820FF;
+    background-color: #101820ff;
     display: flex;
     z-index: 1;
   }
@@ -29,11 +33,11 @@
     font-size: 24px;
     margin-left: 5%;
   }
-  #right-nav{
+  #right-nav {
     display: flex;
     margin: auto 5% auto auto;
   }
-  .right{
+  .right {
     margin-right: 50px;
   }
   /* name section */
@@ -75,14 +79,14 @@
     border-radius: 5px;
     border: 1px solid #ffdd96;
     margin-top: 5%;
-    background-color: #101820FF;
+    background-color: #101820ff;
     position: relative;
   }
 
   .card:hover .hidden2 {
     height: 50%;
   }
-  .card:hover .hidden{
+  .card:hover .hidden {
     height: 50%;
   }
 
@@ -96,35 +100,35 @@
     left: 0;
     right: 0;
     border-radius: 5px 5px 0 0;
-    background-color: #101820FF;
+    background-color: #101820ff;
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .3s ease;
+    transition: 0.3s ease;
   }
-  .hidden{
+  .hidden {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     border-radius: 0 0 5px 5px;
-    background-color: #101820FF;
+    background-color: #101820ff;
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .3s ease;
+    transition: 0.3s ease;
   }
-  .text{
+  .text {
     color: #ffdd96;
     font-size: 20px;
     text-align: center;
   }
-  .in-progress{
+  .in-progress {
     top: 70%;
     left: 25%;
     font-size: 18px;
   }
-  .text3{
+  .text3 {
     font-size: 18px;
   }
   .site-name {
@@ -203,7 +207,7 @@
     border-top-left-radius: 0;
     background: #530044;
   }
-  .percentage{
+  .percentage {
     margin-left: 20px;
   }
 
@@ -228,7 +232,7 @@ a {
   text-decoration: none;
   color: #ffdd96;
 }
-h1{
+h1 {
   font-weight: lighter;
 }
 /* navbar and graphics */
