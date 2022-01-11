@@ -15,10 +15,56 @@
 
 /* ------------------------------------------- tablet view --------------------------------------------------- */
 @media only screen and (min-width: 700px) {
+  #experience img {
+    width: 350px;
+    height: auto;
+  }
+}
+/* ------------------------------------------- laptop view --------------------------------------------------- */
+@media only screen and (min-width: 900px) {
+  /* navbar section */
+  #nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #101820ff;
+    display: flex;
+    z-index: 1;
+  }
+  #nav a {
+    font-size: 24px;
+    margin-left: 5%;
+  }
+  #right-nav {
+    display: flex;
+    margin: auto 5% auto auto;
+  }
+  .right {
+    margin-right: 50px;
+  }
+  /* name section */
+  #top h1 {
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 15%;
+  }
+  .title-sections {
+    font-weight: lighter;
+    margin: 5% 5% 2% 5%;
+    padding-top: 10%;
+  }
+
+  /* experience section */
+  #experience img {
+    width: 350px;
+    height: auto;
+  }
 }
 
 /*----------------------------------------- desktop view -----------------------------------------------------*/
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
   /*navbar section */
   #nav {
     position: sticky;
