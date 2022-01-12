@@ -6,7 +6,23 @@
 }
 
 /*------------------------------------------- mobile view ----------------------------------------------------*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 699px) {
+  #nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #101820ff;
+    display: flex;
+    z-index: 1;
+  }
+  #right-nav {
+    display: flex;
+    margin: auto 5% auto auto;
+  }
+  .right {
+    margin-right: 50px;
+  }
   #experience img {
     width: 250px;
     height: auto;
@@ -15,34 +31,132 @@
 
 /* ------------------------------------------- tablet view --------------------------------------------------- */
 @media only screen and (min-width: 700px) {
+  #nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #101820ff;
+    display: flex;
+    z-index: 1;
+  }
+  
+  #right-nav {
+    display: flex;
+    margin: auto 5% auto auto;
+  }
+  .right {
+    margin-right: 50px;
+  }
+  /* name section */
+  #top h1 {
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 15%;
+  }
+  .title-sections {
+    font-weight: lighter;
+    margin: 5% 5% 2% 5%;
+    padding-top: 10%;
+  }
+  #experience {
+    margin: 5%;
+    padding-top: 7%;
+  }
+  
   #experience img {
-    width: 350px;
+    width: 250px;
     height: auto;
+  }
+   /* --------------------skills section */
+   #skills {
+    margin: 5% auto auto auto;
+  }
+  .skill-progress {
+    display: flex;
+    margin: 2% 5%;
+    text-align: right;
+    font-size: 18px;
+    /* justify-content: flex-end; */
+  }
+  .topic {
+    text-align: left;
+    /* margin-top: 15%; */
+    width: 20%;
+    font-size: 18px;
+    background-color: transparent;
+  }
+  .progress {
+    /* margin: 50px auto; */
+    /* padding: 2px; */
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ffdd96;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    height: 30px;
+  }
+
+  .progress .progress__bar {
+    /* height: 100%;
+    width: 90%;
+    background-color: #05e35e; */
+    height: 100%;
+    width: 90%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #530044;
+  }
+
+  .progress .progress__bar65 {
+    /* height: 100%;
+    width: 90%;
+    background-color: #05e35e; */
+    height: 100%;
+    width: 65%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #530044;
+  }
+
+  .progress .progress__bar20 {
+    /* height: 100%;
+    width: 90%;
+    background-color: #05e35e; */
+    height: 100%;
+    width: 20%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #530044;
+  }
+  .percentage {
+    margin-left: 20px;
+  }
+   /* contact section */
+   
+  #contact-links {
+    display: flex;
+    margin: 2% auto 5% 5%;
+  }
+  .contact-link {
+    margin: 0 40px 0 0;
   }
 }
 /* ------------------------------------------- laptop view --------------------------------------------------- */
 @media only screen and (min-width: 900px) {
   /* navbar section */
-  #nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 2% 0;
-    background-color: #101820ff;
-    display: flex;
-    z-index: 1;
-  }
+  
   #nav a {
     font-size: 24px;
     margin-left: 5%;
   }
-  #right-nav {
-    display: flex;
-    margin: auto 5% auto auto;
-  }
-  .right {
-    margin-right: 50px;
-  }
+ 
   /* name section */
   #top h1 {
     font-weight: lighter;
@@ -59,57 +173,14 @@
   /* experience section */
   #experience img {
     width: 350px;
-    height: auto;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
-}
-
-/*----------------------------------------- desktop view -----------------------------------------------------*/
-@media only screen and (min-width: 1200px) {
-  /*navbar section */
-  #nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 2% 0;
-    background-color: #101820ff;
-    display: flex;
-    z-index: 1;
-  }
-  #nav a {
-    font-size: 24px;
-    margin-left: 5%;
-  }
-  #right-nav {
-    display: flex;
-    margin: auto 5% auto auto;
-  }
-  .right {
-    margin-right: 50px;
-  }
-  /* name section */
-  #top h1 {
-    font-weight: lighter;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 15%;
-  }
-  .title-sections {
-    font-weight: lighter;
-    margin: 5% 5% 2% 5%;
-    padding-top: 10%;
-  }
-
-  /* about section */
-  .about {
-    margin: 5%;
-  }
-
-  /* experience section */
   #experience {
     margin: 5%;
     padding-top: 7%;
   }
-
   #gallery {
     display: flex;
     text-align: center;
@@ -180,6 +251,52 @@
   .site-name {
     font-size: 24px;
   }
+  /* --------------------skills section */
+  #skills {
+    margin: 5% auto auto auto;
+  }
+  .skill-progress {
+    display: flex;
+    margin: 2% 5%;
+    text-align: right;
+    font-size: 22px;
+    /* justify-content: flex-end; */
+  }
+  .topic {
+    text-align: left;
+    /* margin-top: 15%; */
+    width: 20%;
+    font-size: 24px;
+    background-color: transparent;
+  }
+  
+  .percentage {
+    margin-left: 20px;
+  }
+  
+  
+}
+
+/*----------------------------------------- desktop view -----------------------------------------------------*/
+@media only screen and (min-width: 1200px) {
+
+
+  .text {
+    color: #ffdd96;
+    font-size: 20px;
+    text-align: center;
+  }
+  .in-progress {
+    top: 70%;
+    left: 25%;
+    font-size: 18px;
+  }
+  .text3 {
+    font-size: 18px;
+  }
+  .site-name {
+    font-size: 24px;
+  }
 
   #experience img {
     width: 550px;
@@ -205,67 +322,8 @@
     font-size: 24px;
     background-color: transparent;
   }
-  .progress {
-    /* margin: 50px auto; */
-    /* padding: 2px; */
-    display: flex;
-    width: 100%;
-    max-width: 500px;
-    border: 1px solid #ffdd96;
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    height: 30px;
-  }
-
-  .progress .progress__bar {
-    /* height: 100%;
-    width: 90%;
-    background-color: #05e35e; */
-    height: 100%;
-    width: 90%;
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    background: #530044;
-  }
-
-  .progress .progress__bar65 {
-    /* height: 100%;
-    width: 90%;
-    background-color: #05e35e; */
-    height: 100%;
-    width: 65%;
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    background: #530044;
-  }
-
-  .progress .progress__bar20 {
-    /* height: 100%;
-    width: 90%;
-    background-color: #05e35e; */
-    height: 100%;
-    width: 20%;
-    border-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    background: #530044;
-  }
   .percentage {
     margin-left: 20px;
-  }
-
-  /* contact section */
-  #contact {
-  }
-  #contact-links {
-    display: flex;
-    margin: 2% auto 5% 5%;
-  }
-  .contact-link {
-    margin: 0 40px 0 0;
   }
 }
 /*------------------------ outside media queries------------------------- */
