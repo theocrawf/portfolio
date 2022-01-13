@@ -7,6 +7,56 @@
 
 /*------------------------------------------- mobile view ----------------------------------------------------*/
 @media only screen and (max-width: 699px) {
+  /* nav section */
+  /* hamburger menu btn */
+  .nav-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    /* transition: all .5s ease-in-out; */
+    border: 1px solid #ffdd96;
+    margin-left: 2%;
+  }
+  .nav-btn-burger{
+    width: 15px;
+    height: 2px;
+    background-color: #ffdd96;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .nav-btn-burger::before,
+  .nav-btn-burger::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #ffdd96;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .nav-btn-burger::before{
+    transform: translateY(-5px);
+  }
+  .nav-btn-burger::after{
+    transform: translateY(5px);
+  }
+  /* animation for nav burger */
+
+  .nav-btn.open .nav-btn-burger{
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+  .nav-btn.open .nav-btn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .nav-btn.open .nav-btn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
   #nav {
     position: sticky;
     top: 0;
@@ -15,6 +65,9 @@
     background-color: #101820ff;
     display: flex;
     z-index: 1;
+  }
+  #left-nav{
+    display: none;
   }
   #right-nav {
     display: flex;
@@ -31,6 +84,7 @@
 
 /* ------------------------------------------- tablet view --------------------------------------------------- */
 @media only screen and (min-width: 700px) {
+  /* nav section */
   #nav {
     position: sticky;
     top: 0;
@@ -40,7 +94,58 @@
     display: flex;
     z-index: 1;
   }
+   /* hamburger menu btn */
+   .nav-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    /* transition: all .5s ease-in-out; */
+    border: 1px solid #ffdd96;
+    margin-left: 2%;
+  }
+  .nav-btn-burger{
+    width: 15px;
+    height: 2px;
+    background-color: #ffdd96;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .nav-btn-burger::before,
+  .nav-btn-burger::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #ffdd96;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+  }
+  .nav-btn-burger::before{
+    transform: translateY(-5px);
+  }
+  .nav-btn-burger::after{
+    transform: translateY(5px);
+  }
+  /* animation for nav burger */
+
+  .nav-btn.open .nav-btn-burger{
+    transform: translateX(-50px);
+    background-color: transparent;
+  }
+  .nav-btn.open .nav-btn-burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .nav-btn.open .nav-btn-burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
   
+  #left-nav{
+    display: none;
+  }
   #right-nav {
     display: flex;
     margin: auto 5% auto auto;
@@ -151,7 +256,17 @@
 /* ------------------------------------------- laptop view --------------------------------------------------- */
 @media only screen and (min-width: 900px) {
   /* navbar section */
-  
+  .nav-btn{
+    display: none;
+  }
+  #left-nav{
+    display: flex;
+    margin-left: 5%;
+  }
+  .links{
+    margin-right: 50px;
+  }
+ 
   #nav a {
     font-size: 24px;
     margin-left: 5%;
