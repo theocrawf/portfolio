@@ -74,11 +74,108 @@
     margin: auto 5% auto auto;
   }
   .right {
-    margin-right: 50px;
+    margin-left: 25px;
+  }
+
+  /* name section */
+  #top h1 {
+    font-weight: lighter;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15%;
+  }
+  .title-sections {
+    font-weight: lighter;
+    margin: 5%;
+    padding-top: 10%;
+  }
+  /* experience section */
+  #experience {
+    margin: 5%;
+    padding-top: 7%;
   }
   #experience img {
     width: 250px;
     height: auto;
+  }
+
+  /* skills section */
+  #skills {
+    margin: 5% auto auto auto;
+  }
+  .skill-progress {
+    display: flex;
+    margin: 2% 5%;
+    text-align: right;
+    font-size: 18px;
+    /* justify-content: flex-end; */
+  }
+  .mobileViewSkill{
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .topic {
+    display: none;
+  }
+  .progress {
+    /* margin: 50px auto; */
+    /* padding: 2px; */
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #ffdd96;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    height: 20px;
+  }
+
+  .progress .progress__bar {
+    /* height: 100%;
+    width: 90%;
+    background-color: #05e35e; */
+    height: 100%;
+    width: 90%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #530044;
+  }
+
+  .progress .progress__bar65 {
+    /* height: 100%;
+    width: 90%;
+    background-color: #05e35e; */
+    height: 100%;
+    width: 65%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #530044;
+  }
+
+  .progress .progress__bar20 {
+    /* height: 100%;
+    width: 90%;
+    background-color: #05e35e; */
+    height: 100%;
+    width: 20%;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #530044;
+  }
+  .percentage {
+    margin-left: 20px;
+  }
+   /* contact section */
+   
+  #contact-links {
+    display: flex;
+    margin: 2% auto 5% 5%;
+  }
+  .contact-link {
+    margin: 0 40px 0 0;
   }
 }
 
@@ -204,7 +301,7 @@
   }
   #right-nav {
     display: flex;
-    margin: auto 5% auto auto;
+    margin: auto 10px auto auto;
   }
   .right {
     margin-right: 50px;
@@ -221,14 +318,88 @@
     margin: 5% 5% 2% 5%;
     padding-top: 10%;
   }
+  /* experience section */
   #experience {
     margin: 5%;
     padding-top: 7%;
   }
   
   #experience img {
-    width: 250px;
-    height: auto;
+    width: 350px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  #gallery {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin: auto auto auto 5%; */
+  }
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 1px solid #ffdd96;
+    margin-top: 10%;
+    background-color: #101820ff;
+    position: relative;
+  }
+
+  .card:hover .hidden2 {
+    height: 50%;
+  }
+  .card:hover .hidden {
+    height: 50%;
+  }
+
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .hidden2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #101820ff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.3s ease;
+  }
+  .hidden {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: #101820ff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.3s ease;
+  }
+  .text {
+    color: #ffdd96;
+    font-size: 20px;
+    text-align: center;
+  }
+  .in-progress {
+    top: 70%;
+    left: 25%;
+    font-size: 18px;
+  }
+  .text3 {
+    font-size: 18px;
+  }
+  .site-name {
+    font-size: 24px;
   }
    /* --------------------skills section */
    #skills {
@@ -299,6 +470,9 @@
   .percentage {
     margin-left: 20px;
   }
+  .mobileViewSkill{
+    display: none;
+  }
    /* contact section */
    
   #contact-links {
@@ -329,6 +503,10 @@
   #nav a {
     font-size: 24px;
     margin-left: 5%;
+  }
+  #right-nav {
+    display: flex;
+    margin: auto 5% auto auto;
   }
  
   /* name section */
