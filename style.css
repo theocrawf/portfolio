@@ -95,8 +95,11 @@
     padding-top: 7%;
   }
   #experience img {
-    width: 250px;
-    height: auto;
+    width: 220px;
+    height: 130px;
+  }
+  .hidden, .hidden2{
+    display: none;
   }
 
   /* skills section */
