@@ -334,7 +334,7 @@
     border-top-right-radius: 5px;
   }
 
-  #gallery {
+  #gallery, #gallery2 {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -536,7 +536,7 @@
     margin: 5%;
     padding-top: 7%;
   }
-  #gallery {
+  #gallery, #gallery2 {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
