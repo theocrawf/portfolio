@@ -513,11 +513,17 @@
   }
  
   /* name section */
-  #top h1 {
+  svg{
+    display: block;
+    width: 20em;
     font-weight: lighter;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 15%;
+    font-size: 40px;
+    background-color: aqua;
+    margin: auto;
+    margin-top: 10%;
+  }
+  text{
+
   }
   .title-sections {
     font-weight: lighter;
