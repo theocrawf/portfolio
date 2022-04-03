@@ -78,11 +78,10 @@
   }
 
   /* name section */
-  #top h1 {
-    font-weight: lighter;
-    font-size: 50px;
-    text-align: center;
-    margin-top: 15%;
+  #headerImage{
+    display: block;
+    width: 90vw;
+    margin: 5% auto;    
   }
   .title-sections {
     font-weight: lighter;
@@ -304,21 +303,16 @@
   }
   #right-nav {
     display: flex;
-    margin: auto 10px auto auto;
+    margin: auto 2% auto auto;
   }
   .right {
     margin-right: 50px;
   }
-  /* name section */
  /* name section */
- svg{
+ #headerImage{
   display: block;
-  width: 20em;
-  font-weight: lighter;
-  font-size: 40px;
-  background-color: aqua;
-  margin: auto;
-  margin-top: 10%;
+  width: 70vw;
+  margin: 5% auto;    
 }
 .about{
   text-align: center;
@@ -515,31 +509,15 @@
   }
  
   #nav a {
-    font-size: 24px;
+    font-size: 1.5vw;
     margin-left: 5%;
   }
   #right-nav {
-    display: flex;
     margin: auto 5% auto auto;
   }
  
-  /* name section */
-  svg{
-    display: block;
-    width: 20em;
-    font-weight: lighter;
-    font-size: 40px;
-    background-color: aqua;
-    margin: auto;
-    margin-top: 10%;
-  }
-  .about{
-    text-align: center;
-  }
-  .aboutName{
-    text-align: center;
-    margin-bottom: 2%;
-  }
+  /* experience section */
+ 
   .card {
     margin-top: 5%;
   }
@@ -559,12 +537,14 @@
 
 /*----------------------------------------- desktop view -----------------------------------------------------*/
 @media only screen and (min-width: 1200px) {
-
+  #headerImage{
+    display: block;
+    width: 70vw;
+    margin: 5% auto;    
+  }
   
   .text {
-    color: #ffdd96;
     font-size: 24px;
-    text-align: center;
   }
   .in-progress{
     margin-top: 5%;
@@ -575,9 +555,6 @@
   .site-name2{
     font-size: 24px;
     margin: 5% auto;
-  }
-  .site-name {
-    font-size: 24px;
   }
   .description{
     margin: auto 10%;
@@ -600,7 +577,7 @@
 }
 /*------------------------ outside media queries------------------------- */
 body {
-  background-color: #030303;
+  background-color: #83839b;
   color: #ffdd96;
   font-family: "Roboto", sans-serif;
 }
