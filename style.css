@@ -500,7 +500,7 @@
     transition: 0.3s;
     border-radius: 5px;
     border: 1px solid #ffdd96;
-    /* margin-top: 5%; */
+    margin: 2%;
     background-color: #101820ff;
     position: relative;
   }
@@ -543,6 +543,7 @@
     width: 70vw;
     margin: 5% auto;    
   }
+  /* experience section */
   
   .text {
     font-size: 24px;
