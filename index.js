@@ -19,17 +19,17 @@ const modal = document.getElementById("myModal");
 //get navbar and set into modal
 const navbar = document.querySelector(".nav-btn");
 //accessing the links
-const linking = document.getElementsByClassName("links");
+const linking = document.getElementsByClassName("linkage");
 
 
 //modal is set to default of not open
 let navOpen = false;
 const openModal = () => {
-    if (!navOpen){
+    if (!navOpen) {
         navbar.classList.add('open');
         navOpen = true;
         modal.style.display = "block"
-    } else{
+    } else {
         modal.style.display = "none";
     }
 };
@@ -48,8 +48,8 @@ linking.addEventListener('click', closeModal);
 
 window.onclick = function (event) {
     if (event.target == modal) {
-      modal.style.display = "none";
-      navbar.classList.remove('open');
-      navOpen = false;
+        modal.style.display = "none";
+        navbar.classList.remove('open');
+        navOpen = false;
     }
-  }
+}
