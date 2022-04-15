@@ -19,7 +19,13 @@ const modal = document.getElementById("myModal");
 //get navbar and set into modal
 const navbar = document.querySelector(".nav-btn");
 //accessing the links
-const linking = document.getElementsByClassName("linkage");
+const linking = document.querySelectorAll(".linkage");
+
+//image modal section
+const myModal = document.getElementById("myModal2");
+const img = document.getElementsByClassName("myImg");
+const modalImg = document.getElementById("img01");
+const caption = document.getElementById("caption");
 
 
 //modal is set to default of not open
@@ -35,21 +41,40 @@ const openModal = () => {
 };
 
 //closing modal once link is clicked
-const closeModal = () => {
+for(i=0;i< linking.length;i++){    
+    linking[i].onclick = function(){
     modal.style.display = "none";
     navbar.classList.remove('open');
     navOpen = false;
+ }
 }
 
-
 navbar.addEventListener('click', openModal);
-linking.addEventListener('click', closeModal);
 
-
+//closing modal once clicked outside of modal
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
         navbar.classList.remove('open');
         navOpen = false;
+        myModal.style.display = "none";
     }
+}
+
+//image modal section
+
+for(i=0;i< img.length;i++)
+   {    
+    img[i].onclick = function(){
+    myModal.style.display = "block";
+    modalImg.src = this.src;
+    caption.src = this.src;
+    caption.style.display = "block";
+ }
+}
+// element to close modal
+const span = document.getElementsByClassName("close")[0];
+// function to close modal
+span.onclick = function (){
+    myModal.style.display = "none";
 }
