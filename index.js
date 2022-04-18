@@ -26,6 +26,7 @@ const myModal = document.getElementById("myModal2");
 const img = document.getElementsByClassName("myImg");
 const modalImg = document.getElementById("img01");
 const caption = document.getElementById("caption");
+const cap = document.getElementsByClassName("caption");
 
 
 //modal is set to default of not open
@@ -63,15 +64,14 @@ window.onclick = function (event) {
 
 //image modal section
 
-for(i=0;i< img.length;i++)
-   {    
+for(i=0;i< img.length;i++){    
     img[i].onclick = function(){
     myModal.style.display = "block";
     modalImg.src = this.src;
-    caption.src = this.src;
-    caption.style.display = "block";
+    cap.innerHTML = this.src;
  }
 }
+
 // element to close modal
 const span = document.getElementsByClassName("close")[0];
 // function to close modal
