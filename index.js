@@ -64,12 +64,20 @@ window.onclick = function (event) {
 
 //image modal section
 
-for(i=0;i< img.length;i++){    
-    img[i].onclick = function(){
-    myModal.style.display = "block";
-    modalImg.src = this.src;
-    cap.innerHTML = this.src;
- }
+// for(i=0;i< img.length;i++){    
+//     img[i].onclick = function(){
+//     myModal.style.display = "block";
+//     modalImg.src = this.src;
+//     cap.innerHTML = this.src;
+//  }
+// }
+
+class Image {
+    constructor() {
+        this.images = images;
+        this.caption = caption;
+
+    }
 }
 
 // element to close modal
