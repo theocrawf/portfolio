@@ -73,7 +73,7 @@ window.onclick = function (event) {
 // }
 
 class Image {
-    constructor() {
+    constructor(images, caption) {
         this.images = images;
         this.caption = caption;
 
