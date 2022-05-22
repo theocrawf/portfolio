@@ -26,7 +26,8 @@ const myModal = document.getElementById("myModal2");
 const img = document.getElementsByClassName("myImg");
 const modalImg = document.getElementById("img01");
 const caption = document.getElementById("caption");
-const cap = document.getElementsByClassName("caption");
+// const cap = document.getElementsByClassName("caption");
+const card = document.getElementsByClassName("card");
 
 
 //modal is set to default of not open
@@ -64,21 +65,15 @@ window.onclick = function (event) {
 
 //image modal section
 
-// for(i=0;i< img.length;i++){    
-//     img[i].onclick = function(){
-//     myModal.style.display = "block";
-//     modalImg.src = this.src;
-//     cap.innerHTML = this.src;
-//  }
-// }
-
-class Image {
-    constructor(images, caption) {
-        this.images = images;
-        this.caption = caption;
-
-    }
+for(i=0;i< card.length;i++){    
+    card[i].onclick = function(){
+    myModal.style.display = "block";
+    modalImg.src = img.this.src;
+    caption.innerHTML = cap.this.p;
+ }
 }
+
+
 
 // element to close modal
 const span = document.getElementsByClassName("close")[0];
