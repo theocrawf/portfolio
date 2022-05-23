@@ -190,9 +190,6 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
-  .hidden3{
-    display: none;
-  }
   
   /* Modal Content (image) */
   .modal-content2 {
@@ -334,7 +331,6 @@
 
 /* ------------------------------------------- tablet view --------------------------------------------------- */
 @media only screen and (min-width: 700px) {
-  .hidden3{display: none;}
   /* nav section */
   #nav {
     position: sticky;

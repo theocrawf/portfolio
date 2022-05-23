@@ -23,11 +23,11 @@ const linking = document.querySelectorAll(".linkage");
 
 //image modal section
 const myModal = document.getElementById("myModal2");
-const img = document.getElementsByClassName("myImg");
+// const img = document.getElementsByClassName("myImg");
 const modalImg = document.getElementById("img01");
-const caption = document.getElementById("caption");
+// const caption = document.getElementById("caption");
 // const cap = document.getElementsByClassName("caption");
-const card = document.getElementsByClassName("card");
+// const card = document.getElementsByClassName("card");
 
 
 //modal is set to default of not open
@@ -64,15 +64,25 @@ window.onclick = function (event) {
 }
 
 //image modal section
+const card = document.getElementsByClassName("card");
+const img = card.firstChild;
 
 for(i=0;i< card.length;i++){    
     card[i].onclick = function(){
     myModal.style.display = "block";
-    modalImg.src = img.this.src;
-    caption.innerHTML = cap.this.p;
+    modalImg.src = img.src;
+    // caption.innerHTML = cap.this.p;
  }
 }
-
+// for(i=0; i< card.length; i++){
+//     card[i].addEventListener('click', function(clickEvent){
+//         if(clickEvent.target === card){
+//             const img = card.querySelector(".myImg");
+//             myModal.style.display = "block";
+//             modalImg.src = img.src;
+//         }
+//     })
+// }
 
 
 // element to close modal
