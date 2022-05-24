@@ -69,7 +69,7 @@ const card = document.getElementsByClassName("card");
 
 for(i=0;i< card.length;i++){    
     card[i].onclick = function(){
-    const img = document.querySelector('.card img').this;
+    const img = document.querySelector('.card img');
     const cap = document.querySelector('.card div .caption');
     myModal.style.display = "block";
     modalImg.src = img.src;
