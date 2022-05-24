@@ -65,13 +65,15 @@ window.onclick = function (event) {
 
 //image modal section
 const card = document.getElementsByClassName("card");
-const img = card.firstChild;
+
 
 for(i=0;i< card.length;i++){    
     card[i].onclick = function(){
+    const img = document.querySelector('.card img').this;
+    const cap = document.querySelector('.card div .caption');
     myModal.style.display = "block";
     modalImg.src = img.src;
-    // caption.innerHTML = cap.this.p;
+    caption.innerHTML = cap.innerHTML;
  }
 }
 // for(i=0; i< card.length; i++){
