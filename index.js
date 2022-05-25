@@ -66,15 +66,24 @@ window.onclick = function (event) {
 //image modal section
 const card = document.getElementsByClassName("card");
 
+// for(i=0;i< card.length;i++){    
+//     card[i].onclick = function(){
+//     const img = document.querySelector('.card img');
+//     const cap = document.querySelector('.card div .caption');
+//     myModal.style.display = "block";
+//     modalImg.src = img.src;
+//     caption.innerHTML = cap.innerHTML;
+//  }
+// }
 
-for(i=0;i< card.length;i++){    
-    card[i].onclick = function(){
-    const img = document.querySelector('.card img');
-    const cap = document.querySelector('.card div .caption');
-    myModal.style.display = "block";
-    modalImg.src = img.src;
-    caption.innerHTML = cap.innerHTML;
- }
+//try and figure a way out of this
+//look up for loops in objects possibly
+const experienceModal = {
+    img: this.img,
+    cap: this.cap,
+    openModal : function (){
+        myModal.style.display = "block";
+    }
 }
 // for(i=0; i< card.length; i++){
 //     card[i].addEventListener('click', function(clickEvent){
