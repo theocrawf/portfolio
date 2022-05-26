@@ -23,11 +23,8 @@ const linking = document.querySelectorAll(".linkage");
 
 //image modal section
 const myModal = document.getElementById("myModal2");
-// const img = document.getElementsByClassName("myImg");
 const modalImg = document.getElementById("img01");
-// const caption = document.getElementById("caption");
-// const cap = document.getElementsByClassName("caption");
-// const card = document.getElementsByClassName("card");
+const caption = document.getElementById("caption");
 
 
 //modal is set to default of not open
@@ -64,36 +61,16 @@ window.onclick = function (event) {
 }
 
 //image modal section
-const card = document.getElementsByClassName("card");
-
-// for(i=0;i< card.length;i++){    
-//     card[i].onclick = function(){
-//     const img = document.querySelector('.card img');
-//     const cap = document.querySelector('.card div .caption');
-//     myModal.style.display = "block";
-//     modalImg.src = img.src;
-//     caption.innerHTML = cap.innerHTML;
-//  }
-// }
-
-//try and figure a way out of this
-//look up for loops in objects possibly
-const experienceModal = {
-    img: this.img,
-    cap: this.cap,
-    openModal : function (){
+const card = document.querySelectorAll('.card');
+card.forEach (function(item) {
+    const img = item.querySelector('.myImg').getAttribute('src');
+    const cap = item.querySelector('.caption').innerText;
+    item.addEventListener('click', function() {
         myModal.style.display = "block";
-    }
-}
-// for(i=0; i< card.length; i++){
-//     card[i].addEventListener('click', function(clickEvent){
-//         if(clickEvent.target === card){
-//             const img = card.querySelector(".myImg");
-//             myModal.style.display = "block";
-//             modalImg.src = img.src;
-//         }
-//     })
-// }
+        modalImg.setAttribute('src', img);
+        caption.innerText = cap;
+    })
+})
 
 
 // element to close modal
