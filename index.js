@@ -61,17 +61,26 @@ window.onclick = function (event) {
 }
 
 //image modal section
-const card = document.querySelectorAll('.card');
-card.forEach (function(item) {
-    const img = item.querySelector('.myImg').getAttribute('src');
-    const cap = item.querySelector('.caption').innerText;
-    item.addEventListener('click', function() {
-        myModal.style.display = "block";
-        modalImg.setAttribute('src', img);
-        caption.innerText = cap;
-    })
-})
 
+
+
+//image modal turned off on anything other than mobile view
+const screenSize = () =>{
+if (mediaQ.matches){
+    const card = document.querySelectorAll('.card');
+    card.forEach (function(item) {
+        const img = item.querySelector('.myImg').getAttribute('src');
+        const cap = item.querySelector('.caption').innerText;
+        item.addEventListener('click', function() {
+            myModal.style.display = "block";
+            modalImg.setAttribute('src', img);
+            caption.innerText = cap;
+        })
+    })
+} }
+const mediaQ = window.matchMedia('(max-width: 699px)');
+screenSize(mediaQ)
+mediaQ.addEventListener(screenSize)
 
 // element to close modal
 const span = document.getElementsByClassName("close")[0];
