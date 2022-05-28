@@ -65,8 +65,12 @@ window.onclick = function (event) {
 
 
 //image modal turned off on anything other than mobile view
-const screenSize = () =>{
-if (mediaQ.matches){
+
+const mediaQ = window.matchMedia('(max-width: 699px)');
+mediaQ.addEventListener('change', screenSize);
+
+function screenSize (e){
+if (e.matches){
     const card = document.querySelectorAll('.card');
     card.forEach (function(item) {
         const img = item.querySelector('.myImg').getAttribute('src');
@@ -77,10 +81,11 @@ if (mediaQ.matches){
             caption.innerText = cap;
         })
     })
-} }
-const mediaQ = window.matchMedia('(max-width: 699px)');
+}  }
 screenSize(mediaQ)
-mediaQ.addEventListener(screenSize)
+mediaQ.removeEventListener('change', screenSize)
+
+window.onresize = function(){ location.reload(); }
 
 // element to close modal
 const span = document.getElementsByClassName("close")[0];
