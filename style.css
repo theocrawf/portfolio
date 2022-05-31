@@ -292,12 +292,12 @@
     background: #530044;
   }
 
-  .progress .progress__bar70 {
+  .progress .progress__bar75 {
     /* height: 100%;
     width: 90%;
     background-color: #05e35e; */
     height: 100%;
-    width: 70%;
+    width: 75%;
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -604,12 +604,12 @@
     background: #530044;
   }
 
-  .progress .progress__bar70 {
+  .progress .progress__bar75 {
     /* height: 100%;
     width: 90%;
     background-color: #05e35e; */
     height: 100%;
-    width: 70%;
+    width: 75%;
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
