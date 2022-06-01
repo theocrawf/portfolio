@@ -1,19 +1,3 @@
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = document.getElementById("myImg");
-// var modalImg = document.getElementById("img01");
-// var captionText = document.getElementById("caption");
-// img.onclick = function () {
-//     modal.style.display = "block";
-//     modalImg.src = this.src;
-//     captionText.innerHTML = this.alt;
-// }
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function () {
-//     modal.style.display = "none";
-// }
-
-
 //get modal
 const modal = document.getElementById("myModal");
 //get navbar and set into modal
@@ -25,6 +9,8 @@ const linking = document.querySelectorAll(".linkage");
 const myModal = document.getElementById("myModal2");
 const modalImg = document.getElementById("img01");
 const caption = document.getElementById("caption");
+const linkto = document.getElementById("site-link");
+const repo = document.getElementById("repo-link");
 
 
 //modal is set to default of not open
@@ -74,11 +60,15 @@ if (e.matches){
     const card = document.querySelectorAll('.card');
     card.forEach (function(item) {
         const img = item.querySelector('.myImg').getAttribute('src');
-        const cap = item.querySelector('.caption').innerText;
+        const cap = item.querySelector('.description').innerText;
+        const hidden = item.querySelector('.text3').innerText;
+        const hubRepo = item.querySelector('.repos').innerText;
         item.addEventListener('click', function() {
             myModal.style.display = "block";
             modalImg.setAttribute('src', img);
             caption.innerText = cap;
+            linkto.innerText = hidden;
+            repo.innerText = hubRepo;
         })
     })
 }  }
