@@ -61,14 +61,20 @@ if (e.matches){
     card.forEach (function(item) {
         const img = item.querySelector('.myImg').getAttribute('src');
         const cap = item.querySelector('.description').innerText;
-        const hidden = item.querySelector('.text3').innerText;
-        const hubRepo = item.querySelector('.repos').innerText;
+        const hidden = item.querySelector('.text3').getAttribute('href');
+        const hiddenText = item.querySelector('.text3').innerText
+        //get class repos innertext and href to show in modal and make functional
+        const repoText = item.querySelector('.repos').innerText;
+        const hubRepo = item.querySelector('.repos').getAttribute('href');
+        
         item.addEventListener('click', function() {
             myModal.style.display = "block";
             modalImg.setAttribute('src', img);
             caption.innerText = cap;
-            linkto.innerText = hidden;
-            repo.innerText = hubRepo;
+            linkto.setAttribute('href', hidden);
+            linkto.innerText = hiddenText;
+            repo.setAttribute('href', hubRepo);
+            repo.innerText = repoText;
         })
     })
 }  }
