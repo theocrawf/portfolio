@@ -365,7 +365,7 @@
     top: 0;
     width: 100%;
     padding: 2% 0;
-    background-color: rgba(24, 72, 101, 0.8);
+    background-color: #27475b;
     display: flex;
     z-index: 1;
   }
@@ -545,7 +545,7 @@
     border-radius: 5px;
     border: 1px solid #dab55e;
     margin: 10% 5%;
-    background-color: #101820ff;
+    background-color: #27475b;
     position: relative;
   }
 
@@ -566,7 +566,7 @@
     left: 0;
     right: 0;
     border-radius: 5px 5px 0 0;
-    background-color: #101820ff;
+    background-color: #27475b;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -578,7 +578,7 @@
     left: 0;
     right: 0;
     border-radius: 0 0 5px 5px;
-    background-color: #101820ff;
+    background-color: #27475b;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -857,7 +857,7 @@
 }
 /*------------------------ outside media queries------------------------- */
 body {
-  background-color: #152544;
+  background-color: #1d2a44;
   color: #dab55e;
   font-family: "Roboto", sans-serif;
 }
