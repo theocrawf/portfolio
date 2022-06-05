@@ -158,7 +158,9 @@
 
   .about {
     margin: 5%;
+    line-height: 22px;
   }
+  
   
   
   /*------------------ experience section */
@@ -226,7 +228,7 @@
     max-width: 700px;
     text-align: left;
     color: #ccc;
-    padding: 10px 0;
+    padding: 25px 0;
     font-size: large;
   }
   #site-link, #repo-link{
@@ -347,7 +349,11 @@
     margin: 2% auto 15% 5%;
   }
   .contact-link {
-    margin: 0 40px 0 0;
+    margin: 0 25px 0 0;
+  }
+  #resume{
+    padding-top: 7px;
+    font-weight: bold;
   }
 }
 
@@ -437,7 +443,7 @@
     margin: auto;
     padding: 0;
     /* border: 1px solid #3358dc; */
-    width: 75%;
+    width: 50%;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 1s;
@@ -445,6 +451,14 @@
     animation-duration: 1s;
     border-radius: 10px;
     font-size: 24px;
+    text-align: center;
+  }
+  .modal-body{
+    padding: 15px;
+    /* margin: 5%; */
+  }
+  .linkage p{
+    margin: 5% auto;
   }
 
   /* Add Animation */
@@ -487,15 +501,18 @@
   margin: 5% auto;    
 }
 .about{
-  text-align: center;
+  text-align: left;
+  margin: 5%;
+  line-height: 25px;
+  font-size: large;
 }
 .aboutName{
-  text-align: center;
-  margin-bottom: 2%;
+  text-align: left;
+  margin: 5%;
 }
   .title-sections {
     font-weight: lighter;
-    margin: 5% 5% 2% 5%;
+    margin: 5%;
     padding-top: 10%;
   }
   /*-------------------- experience section */
@@ -670,6 +687,10 @@
   .contact-link {
     margin: 0 40px 0 0;
   }
+  #resume{
+    padding-top: 7px;
+    font-weight: bold;
+  }
 }
 /* ------------------------------------------- laptop view --------------------------------------------------- */
 @media only screen and (min-width: 900px) {
@@ -695,8 +716,19 @@
   #right-nav {
     margin: auto 5% auto auto;
   }
+  /* -----------------------------about section */
+  .about{
+    text-align: left;
+    margin: 5%;
+    line-height: 25px;
+    font-size: large;
+  }
+  .aboutName{
+    text-align: left;
+    margin: 5%;
+  }
  
-  /* experience section */
+  /* -----------------------------experience section */
   #experience {
     margin: 5%;
     padding-top: 7%;
@@ -753,7 +785,10 @@
   .topic {
     font-size: 24px;
   }
-  
+  /* contact section */
+  #resume{
+    padding-top: 7px;
+  }
   
   
 }
@@ -765,7 +800,18 @@
     width: 70vw;
     margin: 5% auto;    
   }
-  /* experience section */
+  /* -------------------about section */
+  .about{
+    text-align: left;
+    margin: 2% 5%;
+    line-height: 40px;
+    font-size: x-large;
+  }
+  .aboutName{
+    text-align: left;
+    margin: 5%;
+  }
+  /* -----------------experience section */
   
   .text {
     font-size: 24px;
@@ -796,6 +842,17 @@
   .topic {
     width: 10%;
     font-size: 24px;
+  }
+  /* contact section */
+  #contact-links {
+    margin: 2% auto 5% 5%;
+  }
+  .contact-link {
+    margin: -2% 5% 0 0;
+    font-size: x-large;
+  }
+  #resume{
+    padding-top: 10px;
   }
 }
 /*------------------------ outside media queries------------------------- */
