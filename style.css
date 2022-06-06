@@ -74,7 +74,7 @@
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: rgba(83, 0, 68, 0.9);
+    background-color: #3c1c51;
     margin: auto;
     padding: 0;
     /* border: 1px solid #3358dc; */
@@ -314,7 +314,7 @@
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    background: #530044;
+    background: #3c1c51;
   }
 
   .progress .progress__bar75 {
@@ -326,7 +326,7 @@
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    background: #530044;
+    background: #3c1c51;
   }
 
   .progress .progress__bar20 {
@@ -338,7 +338,7 @@
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
-    background: #530044;
+    background: #3c1c51;
   }
   .percentage {
     margin-left: 20px;
@@ -809,7 +809,7 @@
   }
   .aboutName{
     text-align: left;
-    margin: 5%;
+    margin: 2% 5%;
   }
   /* -----------------experience section */
   
